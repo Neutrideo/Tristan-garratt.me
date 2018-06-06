@@ -11,22 +11,28 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <style>
+/* Added by Aelith */
+#grad1 {
+    height: 150px;
+    background: red; /* For browsers that do not support gradients */
+    background: linear-gradient(#acb6e5, #86fde8); /* Standard syntax (must be last) */
+}
+
+#grad2 {
+    height: 150px;
+    background: red; /* For browsers that do not support gradients */
+    background: linear-gradient(to top, #acb6e5, #86fde8); /* Standard syntax (must be last) */
+}
+/* Added by Aelith */
+
 h1 {
    -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: black;
    -text-align:center;
 }
-  .bg-1 { 
-      background-color: #0E0B16; /* Green */
-      color: #ffffff;
-  }
-  .bg-2 { 
-      background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
-  }
-  .bg-3 { 
-      background-color: #ffffff; /* White */
-      color: #555555;
+  .bg { 
+      background-color: #86fde8; /* Green */
+      color: #231B1B;
   }
   .container-fluid {
      padding-top: 70px;
@@ -40,22 +46,24 @@ h1 {
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
+	background-color: #acb6e5;
+	color: white;
 }
 
 .navbar-nav li a:hover {
     color: #1abc9c !important;
 }
 .bg-4 { 
-    background-color: #2f2f2f;
+    background-color: #acb6e5;
     color: #ffffff;
 }
 body {
     font: 20px "Montserrat", sans-serif;
     line-height: 1.8;
-    color: #f5f6f7;
+    color: #000000;
 }
 
-p {font-size: 16px;}
+p {font-size: 20px;}
 .margin {margin-bottom: 45px;}
 </style>
 <!-- Body
@@ -83,35 +91,39 @@ p {font-size: 16px;}
     </div>
   </div>
 </nav>	 
-	 
-<div class="container-fluid bg-1 text-center">
+
+	 <!-- Added by Aelith -->
+   <div id="grad1"></div>
+   <!-- Added by Aelith -->
+   
+<div class="container-fluid bg text-center">
 <h1 style="color:white">The Industrial Revolution</h1>
 <p style="text-align:center">The Industrial Revolution started around 1780. Before the Industrial Revolution, people lived in homes which contained spacious living conditions.</p>
 </div>
 
-<div class="container-fluid bg-2 text-center">
+<div class="container-fluid bg text-center">
 <h3>N/A</h3>
 <p>.</p>
-
 </div>
 
-<div class="container-fluid bg-3 text-center">
+<div class="container-fluid bg text-center">
 <h3>N/A</h3>
-<p></h3>
+<p></p>
 </div>
 
-<div class="container-fluid bg-2 text-center">
-<a href="mailto:neutrideo@gmail.com?Subject=tristan-garrattchat" class="btn btn-default btn-lg" target="_top">
-  <span class="glyphicon glyphicon-search text-center"</span> Email
+<div class="container-fluid bg text-center">
 </a>
 </div>
 </body>
 </html>
 
+
 <!--Footer-->
+<!--Added by Aelith-->
+   <div id="grad2"></div>
+<!--Added by Aelith-->
 <footer class="container-fluid bg-4 text-center">
   <p>Copyright 2018 Tristan.</a></p> 
 </footer>
 
 <!-- Made by Tristan
--->
